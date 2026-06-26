@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Radiators | Premium Cooling Solutions</title>
+    <!-- Use Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis for smooth scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navbar -->
+      <nav class="navbar" id="home">
+        <div class="logo">
+          <img src="./public/images/logo.png" alt="National Radiators Logo" class="nav-logo">
+        </div>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#services">Services</a>
+          <a href="#story">Our Story</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Hero Section / Cinematic Sequence Animation -->
+      <section class="hero-sequence">
+        <div class="canvas-container">
+          <canvas id="sequence-canvas"></canvas>
+        </div>
+        
+        <div class="hero-content">
+          <p class="hero-brand-name">NATIONAL RADIATORS & OIL COOLER</p>
+          <h1 class="hero-tagline">Precision Cooling.<br>Since 1972.</h1>
+          <a href="#contact" class="hero-cta">Explore Our Craft</a>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="welcome-section" id="story">
+        <div class="container">
+          <div class="welcome-text">
+            <h2>WELCOME TO NATIONAL RADIATORS</h2>
+            <p>We are recognized as a dynamic and innovative leader in the automotive industry, consistently driving excellence in every aspect of our operations. With decades of experience, we specialize in providing tailored solutions, creating cooling systems that meet the unique requirements of every project.</p>
+            <p>Our focus on maintaining the highest standards of quality ensures operational excellence in every product and service we offer at National Radiators.</p>
+          </div>
+          <div class="welcome-images">
+            <!-- Using real product images as provided by the client -->
+            <img src="./public/images/welcome_radiator.jpg" alt="Radiator" class="reveal-img">
+            <img src="./public/images/welcome_oil_cooler.jpg" alt="Oil Cooler" class="reveal-img">
+            <img src="./public/images/welcome_after_cooler.jpg" alt="After Cooler" class="reveal-img">
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values -->
+      <section class="core-values-section">
+        <div class="container">
+          <h2>Our Core Values</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <h3>Leading Organization</h3>
+              <p>Recognized as a dynamic and innovative leader in the automotive industry.</p>
+            </div>
+            <div class="value-card">
+              <h3>Commitment to Quality</h3>
+              <p>Ensuring operational excellence in every product and service.</p>
+            </div>
+            <div class="value-card">
+              <h3>Quality Customer Service</h3>
+              <p>Delivering exceptional support with efficiency and care.</p>
+            </div>
+            <div class="value-card">
+              <h3>Expertise in Customization</h3>
+              <p>Specializing in tailored cooling systems for unique requirements.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products / Variants Section -->
+      <section class="products-section" id="products">
+        <div class="container">
+          <h2>Engineering Excellence</h2>
+          <div class="products-grid">
+            <div class="product-item">
+              <div class="product-img-wrapper">
+                <img src="./public/images/product_radiator_real.jpg" alt="Radiators">
+              </div>
+              <h3>Radiators</h3>
+            </div>
+            <div class="product-item">
+              <div class="product-img-wrapper">
+                <img src="./public/images/product_oil_cooler_real.jpg" alt="Oil Coolers">
+              </div>
+              <h3>Oil Coolers</h3>
+            </div>
+            <div class="product-item">
+              <div class="product-img-wrapper">
+                <img src="./public/images/welcome_after_cooler.jpg" alt="After Coolers">
+              </div>
+              <h3>After Coolers</h3>
+            </div>
+            <div class="product-item">
+              <div class="product-img-wrapper">
+                <img src="./public/images/product_radiator_fan_real.jpg" alt="Radiator Fans">
+              </div>
+              <h3>Radiator Fans</h3>
+            </div>
+            <div class="product-item">
+              <div class="product-img-wrapper">
+                <img src="./public/images/product_condenser_fan_real.jpg" alt="Condenser Fans">
+              </div>
+              <h3>Condenser Fans</h3>
+            </div>
+            <div class="product-item">
+              <div class="product-img-wrapper">
+                <img src="./public/images/product_tank_real.jpg" alt="Tanks">
+              </div>
+              <h3>Tanks</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="services-content">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+              <li>Wholesale Supplier</li>
+              <li>Repair Workshop</li>
+              <li>Site Work</li>
+              <li>Custom Manufacturing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proprietor's Message -->
+      <section class="proprietor-section">
+        <div class="container">
+          <div class="proprietor-content">
+            <h2>Proprietor's Message</h2>
+            <p>As the esteemed Proprietor of National Radiators & Oil Cooler, it is with great pride and gratitude that I address you today. Over the past five decades, our journey has been nothing short of remarkable, marked by resilience, dedication, and an unwavering commitment to excellence.</p>
+            <p>Founded in 1972, with 50+ years of experience, National Radiators & Oil Cooler has emerged as a key player in the automotive aftermarket, specializing in radiators, oil coolers, aftercoolers, condensers, radiator fans, and condenser fans.</p>
+          </div>
+          <div class="proprietor-logo">
+            <img src="./public/images/proprietor.jpg" alt="Proprietor" class="proprietor-img">
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>What Our Clients Say</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial">
+              <p>"We've been sourcing radiators and oil coolers from National Radiators & Oil Cooler for several years, and we've always been impressed with the quality and durability of their products. Their components are reliable, even under the most demanding conditions."</p>
+              <h4>— David Smith, Auto Repair Shop Owner</h4>
+            </div>
+            <div class="testimonial">
+              <p>"The customer service at National Radiators is exceptional. Whenever we have a question or need support with a part, their team is always ready to help. They respond quickly, and we feel like a priority every time."</p>
+              <h4>— Maria Gonzalez, Fleet Manager</h4>
+            </div>
+            <div class="testimonial">
+              <p>"We had a unique requirement for a custom cooling system for one of our projects, and National Radiators delivered beyond expectations. Their team was professional, and the end product fit our specifications perfectly."</p>
+              <h4>— Michael Clarke, Project Manager at XYZ Industries</h4>
+            </div>
+            <div class="testimonial">
+              <p>"National Radiators & Oil Cooler has been our trusted partner for over a decade. Their consistent quality, timely deliveries, and commitment to excellence have made them an invaluable part of our supply chain."</p>
+              <h4>— Rachel Lee, Procurement Specialist at Automotive Co.</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact-header">
+            <h2>Get In Touch</h2>
+            <p class="tagline">Let's Build Your Cooling Solution</p>
+            <p class="subtitle">Reach us at our workshop, branch or warehouse — we respond fast.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-form">
+              <form onsubmit="event.preventDefault();">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                  <label for="vehicle">Vehicle / Equipment</label>
+                  <input type="text" id="vehicle" name="vehicle" placeholder="Make, Model, Year, etc.">
+                </div>
+                <div class="form-group">
+                  <label for="requirement">Requirement</label>
+                  <select id="requirement" name="requirement">
+                    <option value="" disabled selected>Select Requirement</option>
+                    <option value="Radiator">Radiator</option>
+                    <option value="Oil Cooler">Oil Cooler</option>
+                    <option value="Custom Build">Custom Build</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn primary-btn">Send Enquiry</button>
+                  <div class="secondary-actions">
+                    <a href="tel:02024227987" class="btn icon-btn call-btn">Call</a>
+                    <a href="https://wa.me/9102024227987" class="btn icon-btn whatsapp-btn" target="_blank">WhatsApp</a>
+                    <a href="mailto:nationalradiatorsoilcooler@gmail.com" class="btn icon-btn email-btn">Email</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+            <div class="contact-info-map">
+              <div class="direct-contact">
+                <div class="contact-item">
+                  <h4>Phone</h4>
+                  <p><a href="tel:02024227987">02024227987</a></p>
+                </div>
+                <div class="contact-item">
+                  <h4>Email</h4>
+                  <p><a href="mailto:nationalradiatorsoilcooler@gmail.com">nationalradiatorsoilcooler@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="map-container">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.095431602127!2d73.84918731489182!3d18.479261987431267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eabebdb0f9d9%3A0xc3f6b40bd0f2b3e8!2sParvati%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1684311029094!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg);" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <img src="./public/images/logo.png" alt="National Radiators & Oil Cooler Logo" class="footer-logo">
+              <h3>NATIONAL RADIATORS<br><span style="font-weight: 300; font-size: 0.9em; opacity: 0.8;">& Oil Cooler &middot; Since 1972</span></h3>
+              <p class="footer-blurb">50+ years of premium automotive & industrial cooling solutions &mdash; radiators, oil coolers, heat exchangers and custom builds.</p>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Products</h4>
+              <ul>
+                <li><a href="#products">Radiators</a></li>
+                <li><a href="#products">Oil Coolers</a></li>
+                <li><a href="#products">After Coolers</a></li>
+                <li><a href="#products">Radiator Fans</a></li>
+                <li><a href="#products">Condenser Fans</a></li>
+                <li><a href="#products">Coolant Tanks</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact</h4>
+              <p><strong>Phone:</strong> <br><a href="tel:02024227987">02024227987</a></p>
+              <p><strong>Email:</strong> <br><a href="mailto:nationalradiatorsoilcooler@gmail.com">nationalradiatorsoilcooler@gmail.com</a></p>
+              <p><strong>Address:</strong><br>Parvati Industrial Estate, Pune &ndash; 411009</p>
+              <p class="business-hours">Mon &ndash; Sat &middot; 9:30 AM &ndash; 8:00 PM</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2026 National Radiators & Oil Cooler. All rights reserved.</p>
+            <div class="legal-links">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </body>
+</html>
